@@ -1,0 +1,80 @@
+# 🔐 Samba Exploitation Lab (Metasploit)
+
+## 📖 Overview
+This project demonstrates a **Samba vulnerability assessment and exploitation process** in a controlled lab environment using industry-standard tools.
+
+The objective of this lab is to understand how misconfigured or vulnerable Samba services can be identified and exploited, and how such vulnerabilities can be mitigated.
+
+---
+
+## 🧪 Lab Environment
+- Attacker Machine: Kali Linux
+- Target Machine: Vulnerable VM (Lab Setup)
+- Network Type: Private Lab Network
+
+---
+
+## 🛠 Tools Used
+- Nmap (Network Scanning)
+- Metasploit Framework (Exploitation)
+- Netcat (Reverse Shell Handling)
+
+---
+
+## 🔍 Steps Performed
+
+### 1. Network Scanning
+- Identified active hosts in the network
+- Discovered open ports and running services
+- Detected Samba service running on port 139
+
+### 2. Vulnerability Identification
+- Analyzed Samba version
+- Matched with known vulnerabilities
+- Selected suitable exploit module
+
+### 3. Exploitation
+- Used Metasploit module:
+  - `exploit/multi/samba/usermap_script`
+- Configured required options:
+  - RHOST (Target IP)
+  - LHOST (Attacker IP)
+- Successfully established reverse shell access
+
+---
+
+## ⚠️ Disclaimer
+This project was conducted in a **controlled lab environment for educational purposes only**.
+
+⚠️ Do NOT attempt this on real systems or networks without proper authorization. Unauthorized testing is illegal.
+
+---
+
+## 🛡️ Mitigation & Security Tips
+- Keep Samba updated to the latest version
+- Disable unnecessary services and ports
+- Use firewalls to restrict access
+- Apply proper authentication and access control
+- Regular vulnerability scanning
+
+---
+
+## 📷 Screenshots
+(Add your screenshots here — make sure to blur sensitive information like IP addresses)
+
+---
+
+## 🎯 Learning Outcome
+- Understanding of network scanning techniques
+- Practical experience with vulnerability exploitation
+- Awareness of security risks and mitigation strategies
+
+---
+
+## 👨‍💻 Author
+Name: Jubed Mia  
+Role: Cyber Security Learner / Junior Pentester  
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
